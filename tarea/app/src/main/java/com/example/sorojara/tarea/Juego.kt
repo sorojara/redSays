@@ -38,6 +38,8 @@ class Juego : AppCompatActivity() {
 
     fun onLudi() {
         mp.stop()
+        mp.prepare()
+        mp.release()
         mp = MediaPlayer.create (this, R.raw.ludi)
         mp.start ()
         val imageButton = findViewById<ImageButton>(R.id.imageButton2)
@@ -52,6 +54,8 @@ class Juego : AppCompatActivity() {
 
     fun onEsp() {
         mp.stop()
+        mp.prepare()
+        mp.release()
         mp = MediaPlayer.create (this, R.raw.esp)
         mp.start ()
         val imageButton = findViewById<ImageButton>(R.id.imageButton3)
@@ -64,6 +68,8 @@ class Juego : AppCompatActivity() {
 
     fun onAlak() {
         mp.stop()
+        mp.prepare()
+        mp.release()
         mp = MediaPlayer.create (this, R.raw.alak)
         mp.start ()
         val imageButton = findViewById<ImageButton>(R.id.imageButton4)
@@ -76,6 +82,8 @@ class Juego : AppCompatActivity() {
 
     fun onVani() {
         mp.stop()
+        mp.prepare()
+        mp.release()
         mp = MediaPlayer.create (this, R.raw.vani)
         mp.start ()
         val imageButton = findViewById<ImageButton>(R.id.imageButton5)
@@ -88,6 +96,8 @@ class Juego : AppCompatActivity() {
 
     fun onUmb() {
         mp.stop()
+        mp.prepare()
+        mp.release()
         mp = MediaPlayer.create (this, R.raw.umb)
         mp.start ()
         val imageButton = findViewById<ImageButton>(R.id.imageButton6)
@@ -100,6 +110,8 @@ class Juego : AppCompatActivity() {
 
     fun onExeg() {
         mp.stop()
+        mp.prepare()
+        mp.release()
         mp = MediaPlayer.create (this, R.raw.exeg)
         mp.start ()
         val imageButton = findViewById<ImageButton>(R.id.imageButton7)
