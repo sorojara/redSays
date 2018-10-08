@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Red Says</string>
+    <string name="Juego">PLAY</string>
+    <string name="puntajes">HIGH-SCORES</string>
+    <string name="todo">TODO</string>
+    <string name="Regreso">Back</string>
+    <string name="Inicio">Start</string>
+    <string name="Says">RED SAYS</string>
+    <string name="Loose">You Fainted</string>
+    <string name="Turn">Your Turn</string>
+    <string name="Ingrese">Enter your name:</string>
+    <string name="agregar">Add</string>
+    <string name="vacio">Missingno</string>
+
+</resources>

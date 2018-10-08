@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Juego">
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="102dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/todo"
+        android:onClick="pressLudi"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ludicolooff" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="114dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/todo"
+        android:onClick="pressEsp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        app:srcCompat="@drawable/espeonoff" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="108dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/todo"
+        android:onClick="pressAlak"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/alakazamoff" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/todo"
+        android:onClick="pressVani"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:srcCompat="@drawable/vanilluxeoff" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="104dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/todo"
+        android:onClick="pressUmb"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:srcCompat="@drawable/umbreonoff" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="112dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/todo"
+        android:onClick="pressExeg"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+        app:srcCompat="@drawable/exeggcutoroff" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="goToMain"
+        android:text="@string/Regreso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:onClick="gameController"
+        android:text="@string/Inicio"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/Says"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4" />
+
+</android.support.constraint.ConstraintLayout>
